@@ -37,6 +37,7 @@ namespace dotnet_logger_sample
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                });
+                })
+                .UseWindowsService();
     }
 }
